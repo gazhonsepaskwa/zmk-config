@@ -12,15 +12,6 @@
         keymap {
                 compatible = "zmk,keymap";
 
-            	selector {
-						display-name = "Select layer";
-						bindings = <
-								&none   	&none   	&none   	&none   	&none   	&none           			&none   	&none   	&none   	&none   	&none   	&none
-								&none   	&none   	&none   	&to 4   	&to 1   	&none           			&none   	&none   	&none   	&none   	&none   	&none
-								&none   	&none   	&none   	&none   	&none   	&none           			&none   	&none   	&none   	&none   	&none   	&none
-																	&none   	&none   	&none           			&none   	&none   	&none
-    					>;
-				};
 				typing {
 						display-name = "Typing";
 						bindings = <
@@ -37,7 +28,7 @@
 								&trans		&kp N1 		&kp N2      &kp N3      &kp N4      &kp N5         				&kp N6   	&kp N7   	&kp N8 		&kp N9    	&kp N0 		&trans
 								&trans		&kp AMPS    &kp LBKT    &kp LBRC    &kp LPAR    &kp UP         				&kp DOWN 	&kp RPAR 	&kp RBRC 	&kp RBKT 	&kp PIPE 	&trans
 								&trans		&trans      &trans      &trans      &trans      &kp LEFT      				&kp RIGHT	&trans		&trans		&trans		&trans		&trans
-                            										&trans   	&trans      &trans      				&trans  	&to 0   	&trans
+                            										&trans   	&trans      &trans      				&trans  	&trans   	&trans
                         >;
                 };
 
@@ -47,19 +38,9 @@
 								&trans		&trans		&trans		&trans		&trans		&trans         				&trans		&trans		&trans		&trans		&trans		&trans
 								&kp DEL		&kp EXCLAMATION	&kp AT	&kp HASH	&kp DOLLAR	&kp PERCENT					&kp CARET	&kp AMPS	&kp ASTERISK &kp PLUS	&kp EQUAL	&trans
 								&trans		&trans		&trans		&kp TILDE	&kp SLASH	&trans						&trans		&kp BACKSLASH &kp QUESTION &trans	&trans		&trans
-                            										&trans		&to 0		&kp LGUI					&trans		&trans		&studio_unlock
+                            										&trans		&trans		&kp LGUI					&trans		&trans		&studio_unlock
                         >;
                 };
-
-				figma {
-						display-name = "Figma";
-						bindings = <
-								&none   	&none   	&none   	&none   	&none   	&none           			&none   	&none   	&none   	&none   	&none   	&none
-								&kp ESC	   	&none   	&none   	&kp T   	&kp F		&none           			&none   	&none   	&none   	&none   	&none   	&none
-								&none   	&none   	&none   	&none   	&none   	&none           			&none   	&none   	&none   	&none   	&none   	&none
-																	&kp LCTRL	&kp H   	&kp V           			&none   	&none   	&none
-    					>;
-				};
         };
 };
 

@@ -1,0 +1,27 @@
+/ {
+    chosen {
+        zephyr,console = &uart0;
+    };
+};
+
+/* Replace &spi1 with the SPI controller node present on your board (check board DTS) */
+/* Replace gpio numbers below with the P0.x numbers you wired (nRF uses &gpio0 <pin>) */
+&spi1 {
+    status = "okay";
+
+    epaper: ssd1680@0 {
+        compatible = "solomon,ssd1680";    /* ssd16xx frontend used by ZMK/Zephyr */
+        reg = <0>;
+        spi-max-frequency = <8000000>;
+        width = <160>;
+        height = <68>;
+
+        /* Required/typical control pins — replace numbers with your wiring */
+        cs-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;       /* CS pin */
+        reset-gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;    /* RESET (if available) */
+        dc-gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;       /* D/C (if available) */
+        busy-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;    /* BUSY (if available) */
+
+        rotation = <0>;
+    };
+};

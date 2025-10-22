@@ -18,7 +18,7 @@
 								&kp TAB		&kp SEMI	&kp COMMA	&kp DOT		&kp P    	&kp Y						&kp F   	&kp G 		&kp C  		&kp R 		&kp L 		&kp BSPC
 								&kp ESC		&kp A    	&kp O		&kp E 		&kp U   	&kp I 						&kp D   	&kp H 		&kp T  		&kp N 		&kp S 		&kp MINUS
 								&kp LSHFT	&kp QUOT 	&kp Q 		&kp J 		&kp K 		&kp X						&kp B   	&kp M 		&kp W  		&kp V 		&kp Z 		&kp RSHFT
-																	&kp LCTRL	&mo 2		&kp SPACE					&kp RET 	&mo 3 		&kp RALT
+																	&kp LCTRL	&mo 1		&kp SPACE					&kp RET 	&mo 2 		&kp RALT
 					    >;
 				};
 
